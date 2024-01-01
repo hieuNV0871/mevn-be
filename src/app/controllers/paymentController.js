@@ -121,7 +121,7 @@ const paymentController = {
         //https://sandbox.vnpayment.vn/merchantv2/Account/AccountDetail.htm
         var secretKey = 'NSQOZEKALZIMUDWUMBSLJDWKLLQEGBFD';
         var vnpUrl = 'https://sandbox.vnpayment.vn/paymentv2/vpcpay.html';
-        var returnUrl = "http://localhost:3000/vnpay_return";
+        var returnUrl = "https://nvhshop.onrender.com/vnpay_return";
         var date = new Date();
     
         let createDate = moment(date).format('YYYYMMDDHHmmss');
