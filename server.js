@@ -23,7 +23,7 @@ db.connect();
 //   },
 // };
 app.use(cors({
-  origin: ["https://nvhshop.onrender.com","https://nvhshop-adpanel.onrender.com"],
+  origin: ["https://nvhshop.onrender.com","https://nvhshop-adpanel.onrender.com", "http://localhost:3001"],
   // headers: ["Content-Type"],
   credentials: true,
 }));
@@ -36,7 +36,7 @@ route(app)
 const server = http.createServer(app);
 const io = new Server(server, {
   cors: {
-    origin: ["https://nvhshop.onrender.com","https://nvhshop-adpanel.onrender.com"]
+    origin: ["https://nvhshop.onrender.com","https://nvhshop-adpanel.onrender.com" ,"http://localhost:3001"]
   }
 }); 
 
