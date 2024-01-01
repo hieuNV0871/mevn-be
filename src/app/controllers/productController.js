@@ -216,7 +216,7 @@ const productController = {
     if(startPrice || endPrice || brandName){
         filters = {
           name: { $regex: new RegExp(normalizedKeyword, 'i') },
-          price: { $gte: startPrice, $lte: endPrice },
+          price: { $gte: startPrice || 0, $lte: endPrice || 100000000000},
           ...brandFilter
         };
     }
