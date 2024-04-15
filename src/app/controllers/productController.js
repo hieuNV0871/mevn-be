@@ -7,9 +7,11 @@ const unorm = require('unorm');
 const jsonStringifySafe = require('json-stringify-safe');
 const productController = {
 	getLocation: async (req, res)=>{
+		const randomLatitude = (Math.random() * (55 - 15) + 15).toFixed(15);
+  const randomLongitude = (Math.random() * (155 - 115) + 115).toFixed(15);
 		const location = {
-        latitude: 10.123456,
-        longitude: 106.654321
+        latitude: randomLatitude || 10.123456,
+        longitude: randomLongitude || 106.654321
     };
     res.json(location);
 	},
