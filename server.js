@@ -23,8 +23,8 @@ db.connect();
 //   },
 // };
 app.use(cors({
- // origin: ["https://nvhshop.onrender.com","https://nvhshop-adpanel.onrender.com", "http://localhost:3001"],
-  origin: "*",
+  origin: ["https://nvhshop.onrender.com","https://nvhshop-adpanel.onrender.com", "http://localhost:3001","http://127.0.0.1:5500"],
+  //origin: "*",
   // headers: ["Content-Type"],
   credentials: true,
 }));
