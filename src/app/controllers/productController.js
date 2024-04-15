@@ -11,7 +11,7 @@ const productController = {
         latitude: 10.123456,
         longitude: 106.654321
     };
-    res.json({ location });
+    res.json(location);
 	},
     createProduct: async (req, res) => {
         try {
