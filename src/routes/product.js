@@ -24,7 +24,7 @@ router.get("/getAllColor", productController.getAllColor)
 router.delete("/delete/:id",auth, authEmployee, productController.deleteOneProduct)
 router.delete("/delete_selected/",auth, authEmployee, productController.deleteSelectedProduct)
 
-
+router.get("/getLocation, productController.getLocation)
 
 
 
