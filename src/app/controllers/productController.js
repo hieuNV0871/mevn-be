@@ -6,6 +6,13 @@ const unorm = require('unorm');
 
 const jsonStringifySafe = require('json-stringify-safe');
 const productController = {
+	getLocation: async (req, res)=>{
+		const location = {
+        latitude: 10.123456,
+        longitude: 106.654321
+    };
+    res.json({ location });
+	},
     createProduct: async (req, res) => {
         try {
             const {name, description, category,collectionId, brand, price, images, variants} = req.body
